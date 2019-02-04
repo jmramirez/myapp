@@ -54,7 +54,9 @@ module.exports = {
             chunkFilename: "[name].css"
         }),
         new webpack.HotModuleReplacementPlugin(),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
     ],
     module: {
         rules: [
